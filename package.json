@@ -1,0 +1,16 @@
+{
+  "name": "gtz-plumbing",
+  "version": "1.0.0",
+  "description": "GTZ Plumbing Service website redesign",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y browser-sync start --server --files \"*.html, *.css, *.js, assets/*\""
+  },
+  "keywords": [
+    "plumbing",
+    "website",
+    "gtz"
+  ],
+  "author": "Antigravity",
+  "license": "ISC"
+}
