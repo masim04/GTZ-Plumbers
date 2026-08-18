@@ -1017,24 +1017,7 @@ img {
   transform: scale(1.08);
 }
 
-.gallery-info {
-  padding: 1.5rem;
-}
 
-.gallery-category {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--secondary);
-  letter-spacing: 1px;
-  display: block;
-  margin-bottom: 0.25rem;
-}
-
-.gallery-title {
-  font-size: 1.1rem;
-  margin-bottom: 0;
-}
 
 /* ---------------------------------------------------------------------
    12. Blog Subpage Layout

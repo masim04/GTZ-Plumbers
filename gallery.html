@@ -1,238 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Gallery | GTZ Plumbing Service | Orange County, CA</title>
-  <meta name="description" content="View our portfolio of plumbing and gas fitting projects. From luxury bathroom installations to commercial gas lines, see GTZ's master craftsmanship.">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="https://irp.cdn-website.com/cd0b8edf/site_favicon_16_1737131012353.ico">
-  
-  <!-- Typography & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom Stylesheets -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Gallery | GTZ Plumbing Service | Orange County, CA</title>
+    <meta
+      name="description"
+      content="View our portfolio of plumbing and gas fitting projects. From luxury bathroom installations to commercial gas lines, see GTZ's master craftsmanship."
+    />
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="top-bar-container container">
-      <div class="top-bar-left">
-        <span><i class="fa-solid fa-phone-volume"></i> 24/7 Emergency Dispatch: <a href="tel:7145535378" id="top-phone">714-553-5378</a></span>
-      </div>
-      <div class="top-bar-right">
-        <span><i class="fa-solid fa-calendar-days"></i> Sat - Sun: 8:00 AM - 8:00 PM</span>
-        <span><i class="fa-solid fa-location-dot"></i> Orange County, CA</span>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://irp.cdn-website.com/cd0b8edf/site_favicon_16_1737131012353.ico"
+    />
+
+    <!-- Typography & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-container container">
+        <div class="top-bar-left">
+          <span
+            ><i class="fa-solid fa-phone-volume"></i> 24/7 Emergency Dispatch:
+            <a href="tel:7145535378" id="top-phone">714-553-5378</a></span
+          >
+        </div>
+        <div class="top-bar-right">
+          <span
+            ><i class="fa-solid fa-calendar-days"></i> Mon - Fri: 7:00 AM - 5:00
+            PM</span
+          >
+          <span
+            ><i class="fa-solid fa-calendar-days"></i> Sat - Sun: 8:00 AM - 8:00
+            PM</span
+          >
+          <span
+            ><i class="fa-solid fa-location-dot"></i> Orange County, CA</span
+          >
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Header Navigation -->
-  <header class="header">
-    <div class="header-container container">
-      <a href="index.html" class="logo-area" id="nav-logo-link">
-        <img src="assets/GTZ LOGO.webp" alt="GTZ Plumbing Service Logo" class="logo-img">
-        <div class="logo-text">
-          <span class="brand-name">GTZ</span>
-          <span class="brand-sub">PLUMBING SERVICE</span>
-        </div>
-      </a>
-      
-      <nav class="nav" id="main-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="locations.html" class="nav-link">Locations</a></li>
-          <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
-          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <div class="header-cta">
-        <a href="tel:7145535378" class="btn btn-phone" id="header-phone-btn">
-          <i class="fa-solid fa-phone"></i> 714-553-5378
-        </a>
-        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" id="menu-toggle">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Sub-Hero Section -->
-  <section class="sub-hero">
-    <div class="container">
-      <h1>Our Work Gallery</h1>
-      <div class="breadcrumbs">
-        <a href="index.html">Home</a>
-        <span>/</span>
-        <span>Gallery</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Grid Section -->
-  <section class="gallery-section">
-    <div class="container">
-      <div class="section-header text-center scroll-anim">
-        <span class="section-tagline">GTZ Showcase</span>
-        <h2 class="section-title">Our Recent Projects</h2>
-        <p class="section-desc">Take a visual look at the standard of workmanship we maintain across residential and commercial plumbing jobs.</p>
-      </div>
-
-      <!-- Filters -->
-      <div class="gallery-filters scroll-anim">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="residential">Residential</button>
-        <button class="filter-btn" data-filter="commercial">Commercial</button>
-        <button class="filter-btn" data-filter="gas">Gas Systems</button>
-        <button class="filter-btn" data-filter="drain">Drain Clearing</button>
-      </div>
-
-      <!-- Grid -->
-      <div class="gallery-grid">
-        
-        <!-- Card 1: Gas -->
-        <div class="gallery-card scroll-anim" data-category="gas">
-          <div class="gallery-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=600&q=80" alt="Gas line fitting" class="gallery-img">
-          </div>
-          <div class="gallery-info">
-            <span class="gallery-category">Gas Systems</span>
-            <h4 class="gallery-title">Commercial Kitchen Gas Line</h4>
-          </div>
-        </div>
-
-        <!-- Card 2: Residential -->
-        <div class="gallery-card scroll-anim" data-category="residential">
-          <div class="gallery-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?auto=format&fit=crop&w=600&q=80" alt="Copper plumbing" class="gallery-img">
-          </div>
-          <div class="gallery-info">
-            <span class="gallery-category">Residential</span>
-            <h4 class="gallery-title">Copper Distribution Header</h4>
-          </div>
-        </div>
-
-        <!-- Card 3: Drain -->
-        <div class="gallery-card scroll-anim" data-category="drain">
-          <div class="gallery-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Drain clearing" class="gallery-img">
-          </div>
-          <div class="gallery-info">
-            <span class="gallery-category">Drain Clearing</span>
-            <h4 class="gallery-title">Root Clearing Snaking</h4>
-          </div>
-        </div>
-
-        <!-- Card 4: Residential -->
-        <div class="gallery-card scroll-anim" data-category="residential">
-          <div class="gallery-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80" alt="Shower valve repair" class="gallery-img">
-          </div>
-          <div class="gallery-info">
-            <span class="gallery-category">Residential</span>
-            <h4 class="gallery-title">Luxury Shower Valve Setup</h4>
-          </div>
-        </div>
-
-        <!-- Card 5: Commercial -->
-        <div class="gallery-card scroll-anim" data-category="commercial">
-          <div class="gallery-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Commercial trap cleaning" class="gallery-img">
-          </div>
-          <div class="gallery-info">
-            <span class="gallery-category">Commercial</span>
-            <h4 class="gallery-title">Grease Trap Diagnostics</h4>
-          </div>
-        </div>
-
-        <!-- Card 6: Gas -->
-        <div class="gallery-card scroll-anim" data-category="gas">
-          <div class="gallery-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&w=600&q=80" alt="Tankless water heater setup" class="gallery-img">
-          </div>
-          <div class="gallery-info">
-            <span class="gallery-category">Gas Systems</span>
-            <h4 class="gallery-title">Tankless Gas Heater Setup</h4>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Banner Section -->
-  <section class="cta-banner scroll-anim">
-    <div class="cta-banner-container container">
-      <div class="cta-banner-content">
-        <h2>Want a Premium System Installed?</h2>
-        <p>Contact our dispatch center to schedule your pipeline fitting or appliance hookup.</p>
-      </div>
-      <div class="cta-banner-actions">
-        <a href="contact.html" class="btn btn-primary pulse">
-          <i class="fa-solid fa-calculator"></i> Get Estimate Callback
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-top container">
-      <div class="footer-brand">
-        <a href="index.html" class="logo-area">
-          <img src="assets/GTZ LOGO.webp" alt="GTZ Plumbing Service Logo" class="logo-img">
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="header-container container">
+        <a href="index.html" class="logo-area" id="nav-logo-link">
+          <img
+            src="assets/GTZ LOGO.webp"
+            alt="GTZ Plumbing Service Logo"
+            class="logo-img"
+          />
           <div class="logo-text">
-            <span class="brand-name font-light">GTZ</span>
+            <span class="brand-name">GTZ</span>
             <span class="brand-sub">PLUMBING SERVICE</span>
           </div>
         </a>
-        <p class="brand-tagline">Providing professional, reliable, and code-compliant plumbing solutions throughout Orange County for over 15 years.</p>
+
+        <nav class="nav" id="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="locations.html" class="nav-link">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a href="gallery.html" class="nav-link active">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a href="tel:7145535378" class="btn btn-phone" id="header-phone-btn">
+            <i class="fa-solid fa-phone"></i> 714-553-5378
+          </a>
+          <button
+            class="mobile-nav-toggle"
+            aria-label="Toggle navigation menu"
+            id="menu-toggle"
+          >
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
       </div>
-      
-      <div class="footer-links">
-        <h4>Quick Navigation</h4>
-        <ul>
-          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
-          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
-          <li><a href="locations.html"><i class="fa-solid fa-chevron-right"></i> Locations</a></li>
-          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery</a></li>
-          <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
-          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
-          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
-        </ul>
+    </header>
+
+    <!-- Sub-Hero Section -->
+    <section class="sub-hero">
+      <div class="container">
+        <h1>Our Work Gallery</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Gallery</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="gallery-section">
+      <div class="container">
+        <div class="section-header text-center scroll-anim">
+          <span class="section-tagline">GTZ Showcase</span>
+          <h2 class="section-title">Our Recent Work</h2>
+          <p class="section-desc">
+            Take a visual look at the standard of workmanship we maintain across
+            residential and commercial plumbing jobs.
+          </p>
+        </div>
+
+        <!-- Grid -->
+        <div class="gallery-grid">
+          <!-- Card 1: Gas -->
+          <div class="gallery-card scroll-anim" data-category="gas">
+            <img
+              src="assets/gallery1.webp"
+              alt="Gas line fitting"
+              class="gallery-img"
+            />
+          </div>
+
+          <!-- Card 2: Residential -->
+          <div class="gallery-card scroll-anim" data-category="residential">
+            <img
+              src="assets/gallery2.webp"
+              alt="Copper plumbing"
+              class="gallery-img"
+            />
+          </div>
+
+          <!-- Card 3: Drain -->
+          <div class="gallery-card scroll-anim" data-category="drain">
+            <img
+              src="assets/gallery3.webp"
+              alt="Drain clearing"
+              class="gallery-img"
+            />
+          </div>
+
+          <!-- Card 4: Residential -->
+          <div class="gallery-card scroll-anim" data-category="residential">
+            <img
+              src="assets/gallery4.webp"
+              alt="Shower valve repair"
+              class="gallery-img"
+            />
+          </div>
+
+          <!-- Card 5: Commercial -->
+          <div class="gallery-card scroll-anim" data-category="commercial">
+            <img
+              src="assets/gallery5.webp"
+              alt="Commercial trap cleaning"
+              class="gallery-img"
+            />
+          </div>
+
+          <!-- Card 6: Gas -->
+          <div class="gallery-card scroll-anim" data-category="gas">
+            <img
+              src="assets/gallery7.webp"
+              alt="Tankless water heater setup"
+              class="gallery-img"
+            />
+          </div>
+          <div class="gallery-card scroll-anim" data-category="gas">
+            <img
+              src="assets/garbage.webp"
+              alt="Tankless water heater setup"
+              class="gallery-img"
+            />
+          </div>
+          <div class="gallery-card scroll-anim" data-category="gas">
+            <img
+              src="assets/gallery8.webp"
+              alt="Tankless water heater setup"
+              class="gallery-img"
+            />
+          </div>
+          <div class="gallery-card scroll-anim" data-category="gas">
+            <img
+              src="assets/galler6.webp"
+              alt="Tankless water heater setup"
+              class="gallery-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner Section -->
+    <section class="cta-banner scroll-anim">
+      <div class="cta-banner-container container">
+        <div class="cta-banner-content">
+          <h2>Want a Premium System Installed?</h2>
+          <p>
+            Contact our dispatch center to schedule your pipeline fitting or
+            appliance hookup.
+          </p>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="contact.html" class="btn btn-primary pulse">
+            <i class="fa-solid fa-calculator"></i> Get Estimate Callback
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-area">
+            <img
+              src="assets/GTZ LOGO.webp"
+              alt="GTZ Plumbing Service Logo"
+              class="logo-img"
+            />
+            <div class="logo-text">
+              <span class="brand-name font-light">GTZ</span>
+              <span class="brand-sub">PLUMBING SERVICE</span>
+            </div>
+          </a>
+          <p class="brand-tagline">
+            Providing professional, reliable, and code-compliant plumbing
+            solutions throughout Orange County for over 15 years.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Navigation</h4>
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-chevron-right"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-chevron-right"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="locations.html"
+                ><i class="fa-solid fa-chevron-right"></i> Locations</a
+              >
+            </li>
+            <li>
+              <a href="gallery.html"
+                ><i class="fa-solid fa-chevron-right"></i> Gallery</a
+              >
+            </li>
+            <li>
+              <a href="blog.html"
+                ><i class="fa-solid fa-chevron-right"></i> Blog</a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><i class="fa-solid fa-chevron-right"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="contact.html"
+                ><i class="fa-solid fa-chevron-right"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-services">
+          <h4>Our Main Services</h4>
+          <ul>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-chevron-right"></i> Water & Gas
+                Fitting</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-chevron-right"></i> Drain Cleaning &
+                Clearing</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-chevron-right"></i> Drainage Pipe
+                Installation</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-chevron-right"></i> Fixture Leak
+                Repair</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-chevron-right"></i> Water Heater
+                Service</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-services">
-        <h4>Our Main Services</h4>
-        <ul>
-          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Water & Gas Fitting</a></li>
-          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Drain Cleaning & Clearing</a></li>
-          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Drainage Pipe Installation</a></li>
-          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Fixture Leak Repair</a></li>
-          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Water Heater Service</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <div class="footer-bottom-container container">
+          <p class="copyright">
+            &copy; 2026 GTZ Plumbing Service. All rights reserved.
+          </p>
+          <p class="dev-tag">Designed with Premium Aesthetics</p>
+        </div>
       </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <div class="footer-bottom-container container">
-        <p class="copyright">&copy; 2026 GTZ Plumbing Service. All rights reserved.</p>
-        <p class="dev-tag">Designed with Premium Aesthetics</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="app.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="app.js"></script>
+  </body>
 </html>
