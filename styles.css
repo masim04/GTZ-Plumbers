@@ -653,6 +653,32 @@ img {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
+/* Card background image overlay using CSS variable set inline on the card */
+.primary-solution-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--card-bg, none);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.12;
+  filter: brightness(0.95);
+  z-index: 0;
+  transition: var(--transition-normal);
+  pointer-events: none;
+}
+
+.primary-solution-card:hover::before {
+  opacity: 0.50;
+}
+
+/* Ensure card content sits above the background image */
+.primary-solution-card > * {
+  position: relative;
+  z-index: 1;
+}
+
 .solution-meta {
   display: flex;
   justify-content: space-between;
