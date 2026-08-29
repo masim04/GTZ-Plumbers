@@ -395,6 +395,86 @@ img {
 }
 
 /* ---------------------------------------------------------------------
+   Subpage Header Overrides
+   Ensure non-sticky, space-preserving header on article/service pages
+   --------------------------------------------------------------------- */
+body.subpage .top-bar {
+  position: relative;
+  padding: 0.25rem 0;
+  font-size: 0.78rem;
+}
+
+body.subpage .header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 0.45rem 0;
+  background: var(--white);
+  box-shadow: 0 6px 18px rgba(7,23,39,0.03);
+  border-bottom: 1px solid rgba(14, 30, 37, 0.03);
+  z-index: 60;
+}
+
+/* When JS toggles .sticky, keep subpages relative instead of fixed */
+body.subpage .header.sticky {
+  position: relative;
+  background: var(--white);
+  backdrop-filter: blur(6px);
+}
+
+/* Constrain logo on subpages to avoid overlapping content */
+body.subpage .logo-img {
+  height: 36px;
+  max-width: 120px;
+}
+
+body.subpage .brand-name {
+  font-size: 1.2rem;
+}
+
+body.subpage .brand-sub {
+  font-size: 0.6rem;
+}
+
+body.subpage .header-container {
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Compact phone CTA */
+body.subpage .header-cta .btn-phone {
+  font-size: 0.82rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 28px;
+  box-shadow: 0 8px 18px rgba(1,84,145,0.06);
+}
+
+/* Make nav links visible on subpages (header background is light) */
+body.subpage .nav-link {
+  color: var(--text-dark);
+}
+
+body.subpage .nav-link:hover,
+body.subpage .nav-link.active {
+  color: var(--primary);
+}
+
+/* Brand text contrast on subpages */
+body.subpage .brand-name {
+  color: var(--primary);
+}
+
+body.subpage .brand-sub {
+  color: var(--text-muted);
+}
+
+/* Give article content breathing room under the header */
+main.article, .article {
+  padding-top: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* ---------------------------------------------------------------------
    4. Hero Section Styles (Left content, Right Unsplash image)
    --------------------------------------------------------------------- */
 .hero {
@@ -1885,6 +1965,80 @@ img {
 .copyright {
   margin-bottom: 0;
 }
+
+/* ---------------------------------------------------------------------
+   18. Article & Content Page Styles
+   --------------------------------------------------------------------- */
+.article.container {
+  max-width: 900px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.article h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.article .meta {
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.article article {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-body);
+}
+
+.article h2 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.article img.feature {
+  width: 220px;
+  float: left;
+  margin-right: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.article .back-link {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+/* Dev tag / credit styling */
+.dev-tag {
+  color: var(--secondary-light);
+  font-weight: 700;
+  opacity: 0.95;
+}
+
+/* Subpage header adjustments to keep header in normal flow on article/service pages */
+body.subpage .header {
+  position: relative;
+  top: 0;
+  padding: 1rem 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+body.subpage .top-bar { display: block; }
+
+/* Make logo a little larger on article pages while keeping it constrained */
+body.subpage .logo-img {
+  height: 64px;
+}
+
+/* Ensure article images don't overlap heading */
+.article img.feature { float: right; margin-left: 1.25rem; }
+
+
 
 .dev-tag {
   font-weight: 600;
